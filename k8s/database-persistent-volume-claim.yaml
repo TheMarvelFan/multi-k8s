@@ -1,0 +1,24 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+# There is need for volumes in this case as if the database container inside the pod stores all the data, and it crashes for some reason, then the data inside the container is wiped out when it is rereated
+# Thus, volume (in Kubernetes) is a storage location (object type) to store the data inside, so if the container crashes, the data is still safe
+# However, if a pod itself crashes, then the containers inside it (database), and the volumes are wiped out, along with the data stored inside.
+# Persistent Volumes are used in this case. These are not dependent upon the pods, i.e., they are individual objects outside of pods, and thus retain data even when a pod crashes
+# Persistent Volume Claim is an advertisement for the storage for data, i.e., if the request that is asking for some storage space has demand for
+# a space that is not currently available among the options, the space will be dynamically created and assigned to the request
+metadata:
+  name: database-persistent-volume-claim
+spec:
+# These requirements must be met when looking for a statically provisioned or dynamically provisioned storage space
+  accessModes:
+    - ReadWriteOnce
+# This AccessMode implies that only one node can use this storage space
+# Others are: ReadOnlyMany - Multiple nodes can read from this volume, ReadWriteMany - Multiple nodes can read from this volume as well as write data to it
+  resources:
+    requests:
+      storage: 2Gi
+# 2 GB
+# An option can be to add
+# storageClassName
+# This is when in production environment where we have multiple disk storages, and you do not want to use default one
+# In local env, there is just the hard disk.

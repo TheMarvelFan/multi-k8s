@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Making small change. Issue resolved.">
+      <change afterPath="$PROJECT_DIR$/k8s/client-cluster-ip-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/client-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/dash-admin-user.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/dash-clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/database-persistent-volume-claim.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/ingress-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/postgres-cluster-ip-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/pstgres-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/redis-cluster-ip-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/redis-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/server-cluster-ip-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/server-deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/worker-deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/Dockerfile.dev" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx/default.conf" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
+    {
+      &quot;name&quot;: &quot;docker-desktop&quot;
+    }
+  ],
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="KubernetesSettings">
+    <option name="contextName" value="docker-desktop" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2aql1L5TWclDyUltea4pKUlFmqo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "javascript.nodejs.core.library.configured.version": "20.10.0",
+    "javascript.nodejs.core.library.typings.version": "20.10.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="" />
+      <created>1705053776783</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705053776783</updated>
+      <workItem from="1705053782445" duration="14996000" />
+      <workItem from="1705479806945" duration="26000" />
+      <workItem from="1705659361006" duration="538000" />
+      <workItem from="1705740899992" duration="13606000" />
+      <workItem from="1706019913812" duration="1056000" />
+    </task>
+    <task id="LOCAL-00001" summary="Made change to .travis.yml to push images to Docker Hub">
+      <option name="closed" value="true" />
+      <created>1705063406686</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705063406687</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ammended typo">
+      <option name="closed" value="true" />
+      <created>1705063947544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705063947544</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added deploy script to .travis.yml">
+      <option name="closed" value="true" />
+      <created>1705078639087</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705078639089</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made change to key configuration to prevent errors.">
+      <option name="closed" value="true" />
+      <created>1705083886383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705083886383</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added Dockerrun.aws.json">
+      <option name="closed" value="true" />
+      <created>1705084791532</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705084791532</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Tried removing Dockerrun.aws.json to solve the issue.">
+      <option name="closed" value="true" />
+      <created>1705087486250</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705087486251</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Making small change. Issue resolved.">
+      <option name="closed" value="true" />
+      <created>1705088012319</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705088012319</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Made change to .travis.yml to push images to Docker Hub" />
+    <MESSAGE value="ammended typo" />
+    <MESSAGE value="Added deploy script to .travis.yml" />
+    <MESSAGE value="Made change to key configuration to prevent errors." />
+    <MESSAGE value="Added Dockerrun.aws.json" />
+    <MESSAGE value="Tried removing Dockerrun.aws.json to solve the issue." />
+    <MESSAGE value="Making small change. Issue resolved." />
+    <option name="LAST_COMMIT_MESSAGE" value="Making small change. Issue resolved." />
+  </component>
+</project>

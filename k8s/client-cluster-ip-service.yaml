@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-cluster-ip-service
+spec:
+  type: ClusterIP
+# ClusterIP allows other objects from inside the k8s cluster to access and use services of the deployment/pod for which this CLusterIP is created
+# Note that traffic from outside the pod cannot be handled directly by the ClusterIP, and IngressService is used for that purpose
+  selector:
+    component: web
+  ports:
+    - port: 3000
+      targetPort: 3000
+# No nodePort as no outside traffic

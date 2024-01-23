@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      component: server
+  template:
+    metadata:
+      labels:
+        component: server
+    spec:
+      containers:
+        - name: server
+          image: themarvelfan616/multi-server
+          ports:
+            - containerPort: 5000
+          env:
+            - name: REDIS_HOST
+              value: redis-cluster-ip-service
+            - name: REDIS_PORT
+              value: "6379"
+            - name: PGUSER
+              value: postgres
+            - name: PGHOST
+              value: postgres-cluster-ip-service
+            # for host values, there should actually be a URL here
+            - name: PGPORT
+              value: "5432"
+            - name: PGDATABASE
+              value: postgres
+# The PG password cannot be provided here as it will be plainly visible
+# For this, we use object type Secret
+# It can store information securely, like pass
+# Use imperative command to create a secret instead of config file because inside config file too, the secret info has to be provided as plain text
+# which is stupid
+# Command to run: "kubectl create"
+# Syntax: "kubectl create (imperative command to create object) secret (objectType) generic (type of secret. other types are: docker-registry, and, tls) <secretName> --from-literal (we are going to write the info stored inside here) key=value"
+# The above command creates an object, a secret in this case, with some data
+            - name: PGPASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: pgpassword
+                  key: PGPASSWORD
