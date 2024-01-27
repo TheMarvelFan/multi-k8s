@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="specification for distribution added.">
-      <change afterPath="$PROJECT_DIR$/k8s/certificate.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/k8s/issuer.yaml" afterDir="false" />
+    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Added certificate and issuer.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Github_Passkey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Github_Passkey.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/k8s/ingress-service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/k8s/ingress-service.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706344070232</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added certificate and issuer.">
+      <option name="closed" value="true" />
+      <created>1706359042684</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1706359042684</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +252,7 @@
     <MESSAGE value="Removed quotes from env variable name" />
     <MESSAGE value="changed name to .yml lets see if it works." />
     <MESSAGE value="specification for distribution added." />
-    <option name="LAST_COMMIT_MESSAGE" value="specification for distribution added." />
+    <MESSAGE value="Added certificate and issuer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added certificate and issuer." />
   </component>
 </project>
