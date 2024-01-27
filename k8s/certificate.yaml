@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+
+kind: Certificate
+metadata:
+  name: multik8s-software-tls
+spec:
+  secretName: multik8s-software
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: multik8s.software
+  dnsNames:
+    - multik8s.software
+    - www.multik8s.software
