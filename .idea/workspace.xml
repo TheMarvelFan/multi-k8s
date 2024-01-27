@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Rectified typos.">
-      <change beforePath="$PROJECT_DIR$/.travis.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yaml" afterDir="false" />
+    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Rectified more typos.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +85,7 @@
       <workItem from="1705740899992" duration="13606000" />
       <workItem from="1706019913812" duration="1916000" />
       <workItem from="1706254274194" duration="10425000" />
-      <workItem from="1706340010154" duration="634000" />
+      <workItem from="1706340010154" duration="1050000" />
     </task>
     <task id="LOCAL-00001" summary="Made change to .travis.yml to push images to Docker Hub">
       <option name="closed" value="true" />
@@ -174,7 +175,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706340479236</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rectified more typos.">
+      <option name="closed" value="true" />
+      <created>1706340813181</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1706340813182</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +201,7 @@
     <MESSAGE value="Added Travis config." />
     <MESSAGE value="Added deployment scripts." />
     <MESSAGE value="Rectified typos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rectified typos." />
+    <MESSAGE value="Rectified more typos." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rectified more typos." />
   </component>
 </project>
