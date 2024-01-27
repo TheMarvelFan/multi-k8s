@@ -1,4 +1,5 @@
 sudo: required
+dist: focal  # Specify the Ubuntu distribution to prevent syntax error in travis
 services:
   - docker
 
