@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Rectified more typos.">
+    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Removed quotes from env variable name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,8 @@
       <workItem from="1705740899992" duration="13606000" />
       <workItem from="1706019913812" duration="1916000" />
       <workItem from="1706254274194" duration="10425000" />
-      <workItem from="1706340010154" duration="1050000" />
+      <workItem from="1706340010154" duration="1444000" />
+      <workItem from="1706341573044" duration="1270000" />
     </task>
     <task id="LOCAL-00001" summary="Made change to .travis.yml to push images to Docker Hub">
       <option name="closed" value="true" />
@@ -183,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706340813182</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Removed quotes from env variable name">
+      <option name="closed" value="true" />
+      <created>1706341106570</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1706341106570</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +210,7 @@
     <MESSAGE value="Added deployment scripts." />
     <MESSAGE value="Rectified typos." />
     <MESSAGE value="Rectified more typos." />
-    <option name="LAST_COMMIT_MESSAGE" value="Rectified more typos." />
+    <MESSAGE value="Removed quotes from env variable name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed quotes from env variable name" />
   </component>
 </project>

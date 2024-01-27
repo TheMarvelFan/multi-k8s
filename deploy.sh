@@ -1,19 +1,19 @@
-docker build -t themarvelfan616/multi-client:latest -t themarvelfan616/multi-client:$SHA -f ./client/Dockerfile ./client
-docker build -t themarvelfan616/multi-server:latest -t themarvelfan616/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t themarvelfan616/multi-worker:latest -t themarvelfan616/multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t themarvelfan616/multi-client-k8s:latest -t themarvelfan616/multi-client-k8s:$SHA -f ./client/Dockerfile ./client
+docker build -t themarvelfan616/multi-server-k8s:latest -t themarvelfan616/multi-server-k8s:$SHA -f ./server/Dockerfile ./server
+docker build -t themarvelfan616/multi-worker-k8s:latest -t themarvelfan616/multi-worker-k8s:$SHA -f ./worker/Dockerfile ./worker
 
-docker push themarvelfan616/multi-client:latest
-docker push themarvelfan616/multi-server:latest
-docker push themarvelfan616/multi-worker:latest
+docker push themarvelfan616/multi-client-k8s:latest
+docker push themarvelfan616/multi-server-k8s:latest
+docker push themarvelfan616/multi-worker-k8s:latest
 
-docker push themarvelfan616/multi-client:$SHA
-docker push themarvelfan616/multi-server:$SHA
-docker push themarvelfan616/multi-worker:$SHA
+docker push themarvelfan616/multi-client-k8s:$SHA
+docker push themarvelfan616/multi-server-k8s:$SHA
+docker push themarvelfan616/multi-worker-k8s:$SHA
 
 kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=themarvelfan616/multi-server:$SHA
-kubectl set image deployments/client-deployment client=themarvelfan616/multi-client:$SHA
-kubectl set image deployments/worker-deployment worker=themarvelfan616/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=themarvelfan616/multi-server-k8s:$SHA
+kubectl set image deployments/client-deployment client=themarvelfan616/multi-client-k8s:$SHA
+kubectl set image deployments/worker-deployment worker=themarvelfan616/multi-worker-k8s:$SHA
 
 
 # Without any way to identify the latest version of the image, it becomes the same problem as it was locally.
