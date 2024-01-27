@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Added files.">
-      <change afterPath="$PROJECT_DIR$/.travis.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Github_Passkey.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/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" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multi-k8s-412408-b95d7cd836af.json:Zone.Identifier" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-account.json.enc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="41b1b667-c2de-479b-b2be-b63c3be3dc0f" name="Changes" comment="Added Travis config.">
+      <change afterPath="$PROJECT_DIR$/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
       <workItem from="1705659361006" duration="538000" />
       <workItem from="1705740899992" duration="13606000" />
       <workItem from="1706019913812" duration="1916000" />
-      <workItem from="1706254274194" duration="4644000" />
+      <workItem from="1706254274194" duration="10425000" />
     </task>
     <task id="LOCAL-00001" summary="Made change to .travis.yml to push images to Docker Hub">
       <option name="closed" value="true" />
@@ -155,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706254644553</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added Travis config.">
+      <option name="closed" value="true" />
+      <created>1706268592059</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706268592060</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +174,7 @@
     <MESSAGE value="Tried removing Dockerrun.aws.json to solve the issue." />
     <MESSAGE value="Making small change. Issue resolved." />
     <MESSAGE value="Added files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added files." />
+    <MESSAGE value="Added Travis config." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Travis config." />
   </component>
 </project>
