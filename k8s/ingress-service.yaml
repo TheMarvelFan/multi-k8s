@@ -9,20 +9,21 @@ kind: Ingress
 metadata:
   name: ingress-service
   annotations:
+    kubernetes.io/ingress.class: nginx
     # REMOVE CLASSNAME ANNOTATION
     nginx.ingress.kubernetes.io/use-regex: 'true'
     # ADD ANNOTATION
     nginx.ingress.kubernetes.io/rewrite-target: /$1
     # ADD ANNOTATION
 spec:
-  ingressClassName: nginx
+#  ingressClassName: nginx
   # ADD INGRESSCLASSNAME FIELD
   rules:
     - http:
         paths:
           - path: /?(.*)
             # UPDATE PATH
-            pathType: ImplementationSpecific
+            pathType: Prefix
             # ADD PATHTYPE
             backend:
               service:
@@ -32,7 +33,7 @@ spec:
                   number: 3000
           - path: /api/?(.*)
             # UPDATE PATH
-            pathType: ImplementationSpecific
+            pathType: Prefix
             # ADD PATHTYPE
             backend:
               service:
